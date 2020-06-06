@@ -1,0 +1,21 @@
+<script>
+    /*
+        Cree una función que capitalice la última letra de cada palabra.
+        capLast("hello") ➞ "hellO"
+    */
+
+    let capLast = (text = "") => {
+        let words = text.split(' ');
+        let wordsCapLast = words.map(x => {
+            let letters = x.split('');
+            let lastLetterConvert = letters[letters.length - 1].toUpperCase();
+            letters[letters.length - 1] = lastLetterConvert;
+            return letters.join('');
+        });
+
+        return wordsCapLast.join(' ');
+    }
+
+    console.log(capLast('hello'));
+    console.log(capLast('hello world'));
+</script>

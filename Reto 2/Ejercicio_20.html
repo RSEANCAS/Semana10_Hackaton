@@ -1,0 +1,14 @@
+<script>
+    /*
+        Escriba una función, .vreplace () que extienda el prototipo de cadena reemplazando
+        todas las vocales en una cadena con una vocal especificada.
+        "apples and bananas".vreplace("u") ➞ "upplus und bununus"
+    */
+
+    String.prototype.vreplace = function(textReplace) {
+        let valor = this.toString();
+        return valor.replace(/[aeiouAEIOU]/g, textReplace);
+    }
+
+    console.log("apples and bananas".vreplace("u"));
+</script>

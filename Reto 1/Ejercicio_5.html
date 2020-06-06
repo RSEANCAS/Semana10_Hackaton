@@ -1,13 +1,34 @@
 <script>
     /*
-        Crear una función que reciba una matriz de valores y filtre los valores que no son string    
+        Crea una función llamada calculator que recibe 3 parámetros, dos números y
+        una operación matemática (+,-,/,x,%), y si la operación no es correcta que envié
+        un mensaje “El parámetro no es reconocido” calculator(2,"+", 2) ➞ 4
     */
 
-    let buscarNoString = (...rest) => rest.filter(x => typeof x !== 'string');
+    let calculator = (valor1, operacion, valor2) => {
+        let result = 0;
+        switch (operacion) {
+            case '+':
+                result = valor1 + valor2;
+                break;
+            case '-':
+                result = valor1 - valor2;
+                break;
+            case '/':
+                result = valor1 / valor2;
+                break;
+            case 'x':
+                result = valor1 * valor2;
+                break;
+            case '%':
+                result = valor1 % valor2;
+                break;
+            default:
+                result = null;
+        }
 
-    console.log(buscarNoString("Hola Mundo!", 123, 123.4, [1, 2, 3], {
-        a: 1,
-        b: 2,
-        c: 3
-    }, () => {}));
+        return result == null ? 'El parámetro no es reconocido' : result;
+    };
+
+    console.log(calculator(2, "+", 2));
 </script>

@@ -1,0 +1,13 @@
+<script>
+    /*
+        Crear una función que reciba una matriz de valores y filtre los valores que no son string    
+    */
+
+    let buscarNoString = (...rest) => rest.filter(x => typeof x !== 'string');
+
+    console.log(buscarNoString("Hola Mundo!", 123, 123.4, [1, 2, 3], {
+        a: 1,
+        b: 2,
+        c: 3
+    }, () => {}));
+</script>

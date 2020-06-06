@@ -1,11 +1,11 @@
 <script>
     /*
-        Cree una función que tome números y devuelva la suma de sus cubos.
+        Crea una función que tome números y devuelva la suma de sus cubos.
         sumOfCubes(1, 5, 9) ➞ 855
-        Since 1^3 + 5^3 + 9^3 = 1 + 125 + 729 = 855
+        // Since 1^3 + 5^3 + 9^3 = 1 + 125 + 729 = 855
     */
 
-    let sumar = (...rest) => rest.reduce((acumulado, valor) => acumulado + Math.pow(valor, 3), 0);
+    let sumOfCubes = (...rest) => rest.reduce((acumulado, valor) => acumulado + Math.pow(valor, 3), 0);
 
-    console.log(sumar(1, 5, 9));
+    console.log(sumOfCubes(1, 5, 9));
 </script>
