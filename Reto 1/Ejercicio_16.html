@@ -1,0 +1,11 @@
+<script>
+    /*
+        Cree una función que tome un número como argumento y devuelva una matriz de números contando
+        desde este número a cero.
+        countdown(5) ➞ [5, 4, 3, 2, 1, 0]    
+    */
+
+    let countdown = (number) => Array(number + 1).fill().map((x, i) => i).reverse();
+
+    console.log(countdown(5));
+</script>

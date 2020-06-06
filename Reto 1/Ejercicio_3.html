@@ -1,0 +1,14 @@
+<script>
+    /*
+        Crear una funcion que me retorne el tipo de valor entregado,
+        utilizar la función e imprimir los distintos tipos de JS.
+    */
+
+    let tipoValor = (...rest) => rest.forEach(valor => console.log(typeof valor));
+
+    tipoValor("Hola Mundo!", 123, 123.4, [1, 2, 3], {
+        a: 1,
+        b: 2,
+        c: 3
+    }, () => {});
+</script>

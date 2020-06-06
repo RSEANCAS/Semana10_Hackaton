@@ -1,0 +1,9 @@
+<script>
+    /*
+        Crear una función que reciba n cantidad de argumentos y los sume ( utilizar parametros rest)
+    */
+
+    let sumar = (...rest) => rest.reduce((acumulado, valor) => acumulado + Math.pow(valor, 3), 0);
+
+    console.log(sumar(1, 5, 9));
+</script>

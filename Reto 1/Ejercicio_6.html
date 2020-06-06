@@ -1,0 +1,12 @@
+<script>
+    /*
+        Cree una función que tome una matriz de números y devuelva los números mínimos y máximos, en ese orden.
+        minMax([1, 2, 3, 4, 5]) ➞ [1, 5]
+    */
+    let minMax = (numeros = []) => {
+        let numerosOrdenados = numeros.sort();
+        return numerosOrdenados.length == 0 ? [] : [numerosOrdenados[0], numerosOrdenados[numerosOrdenados.length - 1]];
+    }
+
+    console.log(minMax([1, 2, 3, 4, 5]));
+</script>
