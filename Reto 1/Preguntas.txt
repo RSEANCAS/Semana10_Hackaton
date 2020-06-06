@@ -1,0 +1,25 @@
+• ¿Cómo defines una función?
+    Existen 7 formas de definir una función:
+    Function declaration: Se indica la palabra reservada "function" luego el nombre de la función y por último las instrucciones de la función.
+    Ejemplo: function Nombre(){ }
+
+    Function expression: Primero de indica el nombre de la función en una variable y luego se le asigna una funcion anónima y por último las instrucciones de la función.
+    Ejemplo: var Nombre = function() {}
+    
+    IIFE (Immediately Invoked Function Expression): En primer lugar se declaran dos paréntesis, el primero almacenará una función anónima y la segunda ejecutará la función con los parámetros enviados.
+    Ejemplo: (function() {})()
+
+    Shorthand method definition: En este caso, no se define la palabra reservada "function", sólo se define el nombre y luego los paréntesis donde se definen los parámetros y luego las instrucciones de la función.
+    Ejemplo: Nombre(){}
+
+    Arrow function: Primero se define el nombre de la función en una variable y se le asigna los parámetros de la función mediante los paréntesis y por último se definen las instrucciones de la función anticipando la expresión "=>"
+    Ejemplo: var Nombre = () => {}
+
+    Generator function: En esta forma se mediante la palabra reservada "function", luego va el nombre y por último las instrucciones de la función.
+    Ejemplo: function *Nombre(){}
+
+    Function constructor: De esta manera, se declara el nombre la función en un variable y se instancia de la clase "Function" y por último las instrucciones de la función.
+    Ejemplo: var Nombre = new Function(){}
+
+• ¿Hasta cuantos argumentos puedes declarar en una función?
+    No existe un límite para declarar argumentos en la función pero si se definen argumentos en exceso, esto complicaría la llamada a la función.
